@@ -28,14 +28,14 @@ $(function () {
       </button>
     </div>`
     ));
-
+    
     //dress timeblocks based on current hour
     if (offset < currentTime.hour()) {
-      container.children().eq(3 + i).addClass('past');
+      container.children().eq(i).addClass('past');
     } else if (offset == currentTime.hour()) {
-      container.children().eq(3 + i).addClass('present');
+      container.children().eq(i).addClass('present');
     } else {
-      container.children().eq(3 + i).addClass('future');
+      container.children().eq(i).addClass('future');
     }
 
     //on page reload, fill timeblocks from local if any
@@ -69,10 +69,10 @@ function displayCurrentDay() {
   
   //updates timeblock css everyhour if webpage is left open by user
   if (!(today.$h == currentTime.$h)) { //compare live hour to hour onload 
-    container.children().eq(3 + currentTime.$h).removeClass('present');
-    container.children().eq(3 + currentTime.$h).addClass('past');
-    container.children().eq(3 + today.$h).removeClass('future');
-    container.children().eq(3 + today.$h).addClass('present');
+    container.children().eq(currentTime.$h).removeClass('present');
+    container.children().eq(currentTime.$h).addClass('past');
+    container.children().eq(today.$h).removeClass('future');
+    container.children().eq(today.$h).addClass('present');
     currentTime = dayjs(); //load present time 
   }
 }
