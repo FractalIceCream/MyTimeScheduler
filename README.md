@@ -3,9 +3,17 @@
 ## Description
 
 ```
-This application works and explores third-APIs like Bootstrap, jQuery, and Dayjs lending itself simpler ways to engage functionality in our code. To showcase, the appication is event scheduler for a 9 - 5 worker. It calls up the current day and loads any saved events in the scheduler and also allow changes and additional input from the worker, saving its progress in local storage. The scheduler also dynamically moves according to the current hour visually using color cues for timeblocks in the past, present, and future.
+This application works and explores third-APIs like Bootstrap, jQuery, and Dayjs lending
+itself simpler ways to engage functionality in our code. To showcase, the appication is event
+scheduler for a 9 - 5 worker. It calls up the current day and loads any saved events in the
+scheduler and also allow changes and additional input from the worker, saving its progress in
+local storage. The scheduler also dynamically moves according to the current hour visually
+using color cues for timeblocks in the past, present, and future.
 
-- As the user loads the scheduler, it calls on any local data stored and produce the saved events of the day. The current time is displayed and timeblock visually adjusts according to the current hour. The user can input text in the timeblocks and save the event by clicking the save icon of that adjacent time block.
+- As the user loads the scheduler, it calls on any local data stored and produce the saved
+events of the day. The current time is displayed and timeblock visually adjusts according to
+the current hour. The user can input text in the timeblocks and save the event by clicking
+the save icon of that adjacent time block.
 ```
 
 ## Screenshots
